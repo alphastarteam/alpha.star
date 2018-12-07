@@ -23,4 +23,5 @@ https://www.processon.com/view/link/5c09d4a6e4b0e4a51422d107
 ## 运行步骤
 1. 设置jdk11，分别运行前五个项目，确保都启动成功
 2. 分别上面提到的三个地址，确保都运行成功
-3. 搭建前端项目，方式随便，然后访问http://你的地址/html/然后测试用户注册与用户登录功能，登录成功时会设置一个名为token的localStorage
+3. 搭建前端项目，方式随便，然后访问http://你的地址/html/
+4. 测试用户注册与用户登录功能，登录成功时会设置一个名为token的localStorage
