@@ -1,10 +1,10 @@
 package com.example.demouser.controller;
 
-import com.example.demouser.model.Response;
+import model.Response;
 
 public class BaseController {
-    public Response CreateResponse(Boolean success, String message, Object content) {
-        var response = new Response();
+    public <T> Response<T> CreateResponse(Boolean success, String message, T content) {
+        var response = new Response<T>();
         response.setContent(content);
         response.setMessage(message);
         response.setSuccess(success);

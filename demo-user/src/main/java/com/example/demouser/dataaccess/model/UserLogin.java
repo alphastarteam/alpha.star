@@ -25,6 +25,9 @@ public class UserLogin {
     @Column(name = "update_time")
     private Timestamp updateTime;
 
+    @Column(name = "creation_time")
+    private  Timestamp creationTime;
+
     public long getId() {
         return id;
     }
@@ -71,5 +74,13 @@ public class UserLogin {
 
     public void setUpdateTime(Timestamp updateTime) {
         this.updateTime = updateTime;
+    }
+
+    public Timestamp getCreationTime() {
+        return creationTime;
+    }
+
+    public void setCreationTime(Timestamp creationTime) {
+        this.creationTime = creationTime;
     }
 }

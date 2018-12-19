@@ -4,10 +4,12 @@ import com.example.demouser.model.LoginUser;
 import com.example.demouser.model.RegUser;
 import com.example.demouser.dataaccess.model.User;
 
+import java.util.List;
+
 public interface UserService {
     User findUserByUsername(String username);
     User findUserById(Long id);
-    void create(RegUser user) throws Exception;
+    void reg(RegUser user) throws Exception;
     String login(LoginUser user) throws Exception;
 
     User getOnlineUserInfo(String token);
@@ -15,4 +17,6 @@ public interface UserService {
     void logout(String token);
 
     void modifyPassword(String token, String password, String newPassword) throws Exception;
+
+    List<User> findUserByIds(List<Long> ids);
 }

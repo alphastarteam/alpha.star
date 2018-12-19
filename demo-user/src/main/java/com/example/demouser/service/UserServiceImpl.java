@@ -16,6 +16,7 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.sql.Timestamp;
 import java.time.LocalDateTime;
+import java.util.List;
 import java.util.UUID;
 
 @Service
@@ -38,7 +39,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void create(RegUser regUser) throws OperationException, NoSuchAlgorithmException {
+    public void reg(RegUser regUser) throws Exception {
         var existsUser = findUserByUsername(regUser.getUsername().trim());
         if (existsUser != null) {
             throw new OperationException("用户名已被别人使用");
@@ -61,13 +62,15 @@ public class UserServiceImpl implements UserService {
         if (user == null) {
             throw new OperationException("用户名或密码错误");
         }
-        var userLogin = userLoginRepository.findByUserId(user.getId());
+        var userLogin = userLoginRepository.findByUserIdAndIsLogout(user.getId(), false);
         if (userLogin != null) {
             return userLogin.getToken();
         }
         userLogin = new UserLogin();
         userLogin.setIp(loginUser.getIp());
         userLogin.setUserId(user.getId());
+        userLogin.setUpdateTime(Timestamp.valueOf(LocalDateTime.now()));
+        userLogin.setCreationTime(Timestamp.valueOf(LocalDateTime.now()));
         var uuid = UUID.randomUUID().toString();
         userLogin.setToken(uuid);
         userLoginRepository.saveAndFlush(userLogin);
@@ -80,7 +83,7 @@ public class UserServiceImpl implements UserService {
         if (userLogin == null || userLogin.isLogout()) {
             return null;
         }
-        var seconds = (Timestamp.valueOf(LocalDateTime.now()).getTime() - (userLogin.getUpdateTime().getTime())) / 1000;
+        var seconds = userLogin.getUpdateTime() == null ? 99999999 : (Timestamp.valueOf(LocalDateTime.now()).getTime() - (userLogin.getUpdateTime().getTime())) / 1000;
         if (seconds >= 1200) {
             userLoginRepository.logout(token);
             return null;
@@ -103,6 +106,11 @@ public class UserServiceImpl implements UserService {
 
         var newPwd = getMD5(currentUser.getUsername() + newPassword);
         userRepository.modifyPassword(currentUser.getId(), newPwd);
+    }
+
+    @Override
+    public List<User> findUserByIds(List<Long> ids) {
+        return userRepository.findAllById(ids);
     }
 
     /**

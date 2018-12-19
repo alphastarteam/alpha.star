@@ -1,6 +1,6 @@
 package com.example.demouser.exception;
 
-import com.example.demouser.model.Response;
+import model.Response;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;

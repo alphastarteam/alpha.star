@@ -1,8 +1,8 @@
-package com.example.demouser.model;
+package model;
 
-public class Response {
+public class Response<T> {
     private boolean success;
-    private Object content;
+    private T content;
     private String message;
 
     public boolean isSuccess() {
@@ -13,11 +13,11 @@ public class Response {
         this.success = success;
     }
 
-    public Object getContent() {
+    public T getContent() {
         return content;
     }
 
-    public void setContent(Object content) {
+    public void setContent(T content) {
         this.content = content;
     }
 
