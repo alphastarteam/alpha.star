@@ -1,29 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2cb84bda-4675-4d3e-abed-dcf8daeef147" name="Default Changelist" comment="init">
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/alpha.star.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo-blog/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-blog/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo-springzuul/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-springzuul/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-user/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo-user/src/main/java/com/example/demouser/SpringcloudServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-user/src/main/java/com/example/demouser/SpringcloudServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo-user/src/main/java/com/example/demouser/controller/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-user/src/main/java/com/example/demouser/controller/BaseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo-user/src/main/java/com/example/demouser/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-user/src/main/java/com/example/demouser/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo-user/src/main/java/com/example/demouser/dataaccess/model/UserLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-user/src/main/java/com/example/demouser/dataaccess/model/UserLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo-user/src/main/java/com/example/demouser/dataaccess/repository/UserLoginRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-user/src/main/java/com/example/demouser/dataaccess/repository/UserLoginRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo-user/src/main/java/com/example/demouser/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-user/src/main/java/com/example/demouser/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo-user/src/main/java/com/example/demouser/model/LoginUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-user/src/main/java/com/example/demouser/model/LoginUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo-user/src/main/java/com/example/demouser/model/Response.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo-user/src/main/java/com/example/demouser/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-user/src/main/java/com/example/demouser/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo-user/src/main/java/com/example/demouser/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-user/src/main/java/com/example/demouser/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo-user/src/main/java/com/example/demouser/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-user/src/main/java/com/example/demouser/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo-user/src/test/java/com/example/demouser/DemoUserApplicationTests.java" beforeDir="false" />
+    <list default="true" id="2cb84bda-4675-4d3e-abed-dcf8daeef147" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/alpha.star.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -291,7 +274,7 @@
       <workItem from="1544150672420" duration="599000" />
       <workItem from="1544152767025" duration="1640000" />
       <workItem from="1544411899308" duration="28369000" />
-      <workItem from="1544665106587" duration="37721000" />
+      <workItem from="1544665106587" duration="38003000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1545210888019</created>
@@ -307,15 +290,28 @@
       <option name="project" value="LOCAL" />
       <updated>1545211100294</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="init">
+      <created>1545211274773</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1545211274773</updated>
+    </task>
+    <task id="LOCAL-00004" summary="init">
+      <created>1545211430392</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1545211430392</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84477000" />
+    <option name="totallyTimeSpent" value="84759000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
